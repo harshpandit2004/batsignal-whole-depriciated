@@ -38,6 +38,10 @@ function App() {
     setTemp(!temp);
   };
   
+  setTimeout(() => {
+    setTemp(!temp);
+  }, 15000);
+
   return (
     <div className="App">
       <header className="App-header">
