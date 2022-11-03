@@ -41,7 +41,7 @@ function App() {
       });
     setTimeout(() => {
       setTemp(!temp);
-    }, 2000);
+    }, 1000);
     setInitval(false);
   };
 
