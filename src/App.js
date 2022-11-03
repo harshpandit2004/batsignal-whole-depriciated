@@ -6,7 +6,8 @@ function App() {
   const [something, setsomething] = useState();
   const [initval, setInitval] = useState(true);
   const [temp, setTemp] = useState(true);
-  
+  const [temp2, setTemp2] = useState(true);
+
   useEffect(() => {
     fetch("https://batsignal-backend.herokuapp.com/SignalValue", {
       method: "GET",
@@ -16,16 +17,20 @@ function App() {
         console.log(data);
         setsomething(data.stuff[0].signalValue);
       });
-  }, [temp]);
+  }, [temp, temp2]);
+
+  setTimeout(() => {
+    setTemp2(!temp2);
+  }, 15000);
 
   const switchhandler = () => {
     fetch(
       "https://batsignal-backend.herokuapp.com/patchasignalvalue/6357e3e3d837d737e22d7ee4",
       {
         method: "PATCH",
-        mode:"cors",
+        mode: "cors",
         headers: { "Content-type": "text/plain" },
-        data: JSON.stringify()
+        data: JSON.stringify(),
       }
     )
       .then((res) => {
@@ -34,13 +39,11 @@ function App() {
       .then((data) => {
         console.log(data);
       });
+    setTimeout(() => {
+      setTemp(!temp);
+    }, 2000);
     setInitval(false);
-    setTemp(!temp);
   };
-  
-  setTimeout(() => {
-    setTemp(!temp);
-  }, 15000);
 
   return (
     <div className="App">
