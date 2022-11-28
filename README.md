@@ -1,18 +1,18 @@
 # Why does this exist?
 
 This project is a web application that mimics the useage of the application described [here](https://twitter.com/grohliest/status/1025944951123861504)\
-it exists just to prove that human life must not be wasted implementing such trash ideas instead must be used to do something better (like reading comic books)\
+it exists just to prove that human life must not be wasted implementing such trash ideas instead must be used to do something better (like reading comic books)
 
-The project is currently being hosted [here](https://batsignal.netlify.app/)\
+The project is currently being hosted [here](https://batsignal.netlify.app/)
 
 # How to demonstrate
 
 Get two or more devices\
 Visit the given [link](https://batsignal.netlify.app/) (https://batsignal.netlify.app/) in the preffered browser and hit 'Go Live'\
 on one of the devices, hit the toggle switch (Switch on / Switch off)\
-the browser should update the signal value in under 11 seconds for all possible endpoints\
+the browser should update the signal value in under 11 seconds for all possible endpoints
 
-viola, the batman is summoned.\
+viola, the batman is summoned.
 
 ## Understanding and implementing the source code -
 
