@@ -42,6 +42,30 @@ code {
   color: #61dafb;
 }
 
+.navbar {
+  margin: 0;
+  border: 0;
+  width: 100vw;
+  background-color: #282c34;
+}
+.navbar a {
+  padding: 1rem;
+  color: #ffb900;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 1080px) {
+  .navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 .batDiv {
   width: 75vw;
   height: 75vh;
@@ -52,17 +76,96 @@ code {
   flex-direction: column;
   flex-wrap: nowrap;
   transition: all 0.3s ease 0s;
+
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.batDiv:active {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+.batDiv:hover {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.switchon {
+  text-decoration: none;
+  color: #ffdd86;
+  background: #000000;
+  filter: drop-shadow(0px 0px 50px #ffd900);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  animation: fliker 1s linear 0.1s forwards;
+}
+.switchon:hover {
+  filter: drop-shadow(0px 0px 75px #ffd900);
+  border: none;
+  padding: 0.65rem 2.15rem;
+}
+
+.switchon:active {
+  filter: drop-shadow(0px 0px 75px #ffd900);
+  border: none;
+  padding: 0.65rem 2.15rem;
+}
+
+.switchoff {
+  text-decoration: none;
+  color: #acacac;
+  background: #000000;
+  filter: drop-shadow(0px 0px 50px #000000);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  animation: anti-fliker 1s linear 0.1s forwards;
+}
+.switchoff:hover {
+  filter: drop-shadow(0px 0px 75px #000000);
+  color: #ffffff;
+  border: none;
+  padding: 0.65rem 2.15rem;
+}
+.switchoff:active {
+  filter: drop-shadow(0px 0px 75px #ffd900);
+  border: none;
+  padding: 0.65rem 2.15rem;
 }
 
 .BMinit {
   filter: drop-shadow(0px 0px 50px #000000);
 }
 .BMon {
-  animation: fliker 1s linear .10s forwards;
+  animation: fliker 1s linear 0.1s forwards;
   filter: drop-shadow(0px 0px 100px #ffd900);
 }
 .BMoff {
-  animation: anti-fliker .5s linear .15s forwards;
+  animation: anti-fliker 0.5s linear 0.15s forwards;
   filter: drop-shadow(0px 0px 50px #000000);
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import BatCR from "./Components/BatCR";
-import BMinit from "./Components/BMinit";
+import BatButton from "./Components/BatButton";
+import Signal from "./Components/Signal";
 
 function App() {
   const [something, setsomething] = useState();
@@ -9,6 +9,7 @@ function App() {
   const [temp2, setTemp2] = useState(true);
 
   useEffect(() => {
+    //if temp = false, no need to fetch (to be added functionality)
     fetch("https://batsignal-backend.herokuapp.com/SignalValue", {
       method: "GET",
     })
@@ -21,7 +22,7 @@ function App() {
 
   setTimeout(() => {
     setTemp2(!temp2);
-  }, 15000);
+  }, 10000);
 
   const switchhandler = () => {
     fetch(
@@ -34,32 +35,26 @@ function App() {
       }
     )
       .then((res) => {
-        console.log(res.status);
+        res.json();
       })
       .then((data) => {
         console.log(data);
       });
     setTimeout(() => {
       setTemp(!temp);
-    }, 1000);
+    }, 150);
     setInitval(false);
   };
 
   return (
     <div className="App">
       <header className="App-header">
-        {initval ? <BMinit /> : <BatCR something={something} />}
-        <button type="button" className="toggleswitch" onClick={switchhandler}>
-          Switch
-        </button>
+        {/* navbar */}
+        <Signal switchhandler={switchhandler} initval={initval} something={something} />
+        <BatButton switchhandler={switchhandler} initval={initval} something={something}/>
       </header>
     </div>
   );
 }
 
 export default App;
-
-/**
- *
- *
- */
