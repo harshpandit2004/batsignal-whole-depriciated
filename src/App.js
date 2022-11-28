@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BatButton from "./Components/BatButton";
+import Navbar from "./Components/Navbar";
 import Signal from "./Components/Signal";
 
 function App() {
@@ -48,10 +49,18 @@ function App() {
 
   return (
     <div className="App">
+     <Navbar/>
       <header className="App-header">
-        {/* navbar */}
-        <Signal switchhandler={switchhandler} initval={initval} something={something} />
-        <BatButton switchhandler={switchhandler} initval={initval} something={something}/>
+        <Signal
+          switchhandler={switchhandler}
+          initval={initval}
+          something={something}
+        />
+        <BatButton
+          switchhandler={switchhandler}
+          initval={initval}
+          something={something}
+        />
       </header>
     </div>
   );

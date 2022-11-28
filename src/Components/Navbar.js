@@ -1,11 +1,30 @@
-import Navbar from 'react-bootstrap/Navbar';
+import React from "react";
 
-function BasicExample() {
+export default function Navbar() {
   return (
-    <Navbar expand="lg" className="navbar">
-        <a href="https://github.com/harshpandit2004/batsignal-whole" >The Batsignal</a>
-    </Navbar>
+    <div className="Navbar">
+      <table class="reachmeout">
+        <tr>
+          <td>
+            <a
+              href="https://www.linkedin.com/in/harsh-pandit-4b1013235/"
+              class="stylisethisbutton"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </td>
+          <td>
+            <a
+              href="https://github.com/harshpandit2004/batsignal-whole"
+              class="stylisethisbutton"
+              title="Github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
   );
 }
-
-export default BasicExample;
