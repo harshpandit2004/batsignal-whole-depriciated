@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     //if temp = false, no need to fetch (to be added functionality)
-    fetch("https://batsignal-backend.herokuapp.com/SignalValue", {
+    fetch("https://clever-battledress-dove.cyclic.app/SignalValue", {
       method: "GET",
     })
       .then((res) => res.json())
