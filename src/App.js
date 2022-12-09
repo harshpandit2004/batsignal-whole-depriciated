@@ -27,7 +27,7 @@ function App() {
 
   const switchhandler = () => {
     fetch(
-      "https://batsignal-backend.herokuapp.com/patchasignalvalue/6357e3e3d837d737e22d7ee4",
+      "https://clever-battledress-dove.cyclic.app/patchasignalvalue/6357e3e3d837d737e22d7ee4",
       {
         method: "PATCH",
         mode: "cors",
