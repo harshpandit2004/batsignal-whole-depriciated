@@ -5,6 +5,15 @@ export default function Navbar() {
     <div className="Navbar">
       <table class="reachmeout">
         <tr>
+        <td>
+            <a
+              href="https://portfolio-ce6f9.web.app/"
+              class="stylisethisbutton"
+              title="Portfolio"
+            >
+              <i class="fa fa-link"></i>
+            </a>
+          </td>
           <td>
             <a
               href="https://www.linkedin.com/in/harsh-pandit-4b1013235/"
