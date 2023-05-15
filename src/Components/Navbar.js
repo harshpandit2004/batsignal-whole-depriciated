@@ -5,22 +5,22 @@ export default function Navbar() {
     <div className="Navbar">
       <table class="reachmeout">
         <tr>
-        <td>
+          <td>
+            <a
+              href="https://drive.google.com/file/d/1ZNqA5WBApC4tg9dBJMBt55gycBJsxn4N/view?usp=sharing"
+              class="stylisethisbutton"
+              title="Android App"
+            >
+              <i class="fab fa-android"></i>
+            </a>
+          </td>
+          <td>
             <a
               href="https://portfolio-ce6f9.web.app/"
               class="stylisethisbutton"
               title="Portfolio"
             >
               <i class="fa fa-link"></i>
-            </a>
-          </td>
-          <td>
-            <a
-              href="https://www.linkedin.com/in/harsh-pandit-4b1013235/"
-              class="stylisethisbutton"
-              title="LinkedIn"
-            >
-              <i class="fab fa-linkedin"></i>
             </a>
           </td>
           <td>
