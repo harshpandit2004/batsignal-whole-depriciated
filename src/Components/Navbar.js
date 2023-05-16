@@ -1,4 +1,5 @@
 import React from "react";
+import fileDownload from "js-file-download";
 
 export default function Navbar() {
   return (
@@ -6,13 +7,20 @@ export default function Navbar() {
       <table class="reachmeout">
         <tr>
           <td>
-            <a
-              href="https://drive.google.com/file/d/1ZNqA5WBApC4tg9dBJMBt55gycBJsxn4N/view?usp=sharing"
+            <button
               class="stylisethisbutton"
               title="Android App"
+              onClick={() => {
+                fetch("https://clever-battledress-dove.cyclic.app/android", {
+                  method: "GET",
+                  responseType: "blob",
+                }).then((res) => {
+                  fileDownload(res.data, "batsignal.apk");
+                });
+              }}
             >
               <i class="fab fa-android"></i>
-            </a>
+            </button>
           </td>
           <td>
             <a

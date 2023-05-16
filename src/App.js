@@ -21,10 +21,6 @@ function App() {
       });
   }, [temp, temp2]);
 
-  setTimeout(() => {
-    setTemp2(!temp2);
-  }, 10000);
-
   const switchhandler = () => {
     fetch(
       "https://clever-battledress-dove.cyclic.app/patchasignalvalue/6357e3e3d837d737e22d7ee4",
@@ -41,15 +37,18 @@ function App() {
       .then((data) => {
         console.log(data);
       });
+    setInitval(false);
     setTimeout(() => {
       setTemp(!temp);
-    }, 150);
-    setInitval(false);
+    }, 400);
   };
 
+  setTimeout(() => {
+    setTemp2(!temp2);
+  }, 10000);
   return (
     <div className="App">
-     <Navbar/>
+      <Navbar />
       <header className="App-header">
         <Signal
           switchhandler={switchhandler}

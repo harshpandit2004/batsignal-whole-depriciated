@@ -46,24 +46,29 @@ code {
   justify-content: flex-end;
   align-items: center;
   background-color: #282c34;
-  padding: 1.10rem;
+  padding: 0.5rem;
 }
 .stylisethisbutton {
-  background-color: #282c34;
-  padding: 1rem;
+  all:unset;
+  background-color: #282c3400;
+  padding: 0rem 1rem;
   border-radius: 50%;
-  margin: 2rem;
+  margin: 1rem;
+  border:none;
+  outline: 0;
   color: white;
 }
 
 .stylisethisbutton:hover {
-  background-color: #17191f;
-  padding: 1rem;
-  transition: .5s;
-  filter: drop-shadow(0px 0px 75px #6e5e00);
-  border-radius: 50%;
+  border:none;
+  outline: none;
+  padding: 0rem 1rem;
+  transition: 1s;
+  filter: drop-shadow(0px 0px 15px #ffd900);
   color: rgb(255, 255, 255);
 }
+
+.stylisethisbutton:focus {outline:0;}
 
 .batDiv {
   width: 75vw;
@@ -104,6 +109,8 @@ code {
   outline: none;
 }
 
+.batDiv:focus {outline:0;}
+
 .switch {
   text-decoration: none;
   color: #ffffff;
@@ -120,14 +127,14 @@ code {
 .switch:hover {
   filter: drop-shadow(0px 0px 75px #000000);
   border: none;
-  padding: 0.65rem 2.15rem;
 }
 
 .switch:active {
   filter: drop-shadow(0px 0px 75px #ffd900);
   border: none;
-  padding: 0.65rem 2.15rem;
 }
+
+.switch:focus {outline:0;}
 
 .switchon {
   text-decoration: none;
@@ -146,15 +153,14 @@ code {
 .switchon:hover {
   filter: drop-shadow(0px 0px 75px #ffd900);
   border: none;
-  padding: 0.65rem 2.15rem;
 }
+
+.switchon:focus {outline:0;}
 
 .switchon:active {
   filter: drop-shadow(0px 0px 75px #ffd900);
   border: none;
-  padding: 0.65rem 2.15rem;
 }
-
 .switchoff {
   text-decoration: none;
   color: #acacac;
@@ -173,13 +179,13 @@ code {
   filter: drop-shadow(0px 0px 75px #000000);
   color: #ffffff;
   border: none;
-  padding: 0.65rem 2.15rem;
 }
 .switchoff:active {
   filter: drop-shadow(0px 0px 75px #ffd900);
   border: none;
-  padding: 0.65rem 2.15rem;
 }
+
+.switchoff:focus {outline:0;}
 
 .BMinit {
   filter: drop-shadow(0px 0px 50px #000000);
