@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     //if temp = false, no need to fetch (to be added functionality)
-    fetch("https://clever-battledress-dove.cyclic.app/SignalValue", {
+    fetch("https://drab-rose-sheep-tam.cyclic.app/SignalValue", {
       method: "GET",
     })
       .then((res) => res.json())
@@ -23,7 +23,7 @@ function App() {
 
   const switchhandler = () => {
     fetch(
-      "https://clever-battledress-dove.cyclic.app/patchasignalvalue/6357e3e3d837d737e22d7ee4",
+      "https://drab-rose-sheep-tam.cyclic.app/patchasignalvalue/6357e3e3d837d737e22d7ee4",
       {
         method: "PATCH",
         mode: "cors",
