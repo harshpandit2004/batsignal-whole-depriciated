@@ -11,7 +11,7 @@ export default function Navbar() {
               class="stylisethisbutton"
               title="Android App"
               onClick={() => {
-                fetch("https://clever-battledress-dove.cyclic.app/android", {
+                fetch("https://drab-rose-sheep-tam.cyclic.app/android", {
                   method: "GET",
                   responseType: "blob",
                 }).then((res) => {
