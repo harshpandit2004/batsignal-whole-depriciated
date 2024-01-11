@@ -3,7 +3,7 @@ import React from "react";
 function BatConditionalRendering(props) {
   return (
     <>
-      {props.something ? (
+      {props.signalValue ? (
         <button className="batDiv" onClick={props.switchhandler}>
           <img
             src={require("../images/Batman-Logo1.png")}

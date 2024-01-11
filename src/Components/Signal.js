@@ -5,7 +5,7 @@ import BatConditionalRendering from "./BatConditionalRendering";
 export default function Signal(props) {
   return (
     <div>
-      {props.initval ? <BMinitial switchhandler = {props.switchhandler}/> : <BatConditionalRendering switchhandler={props.switchhandler} something={props.something} />}
+      <BatConditionalRendering switchhandler={props.switchhandler} signalValue={props.signalValue} />
     </div>
   )
 }
